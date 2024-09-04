@@ -1,0 +1,65 @@
+Guide for multiboxing luas
+
+Download the following luas from github
+
+fastfollow
+
+roller
+
+superwarp
+
+**To macro a script to send from main
+
+/console send exec mulename scriptname.txt
+
+ex: /console send exec tallgeese hqbrdbuff.txt
+
+**To send a command on the fly from main to mulename
+
+//send mulename command
+
+ex: //send tallgeese /cure3 heiro
+
+**To send commands to all characters you have logged in
+
+//send @all command
+
+ex: //send @all /join
+
+**To load a lua on another character from your main
+
+//send tallgeese //lua load roller
+
+**To use Roller Lua on a COR character (automated cor rolling)
+
+//lua load roller
+
+//roller roll1 job/rollname
+
+//roller roll2 job/rollname
+
+//roller on/off
+
+Can also macro or script those functions. Each time you load roller, it will remember the last set of rolls you had set. Roller will also automatically reroll on duration wearing, use appropriate JA(fold,snake eye etc) stop on lucky numbers and 11's.
+
+**To use fastfollow (automated following for mules to main)
+
+/console send all //lua load fastfollow
+
+//ffo me
+
+//ffo stopall
+
+**To use superwarp (easy homepoint/staging point etc warping for multiboxing)
+
+/console send all //lua load superwarp
+
+//sw hp all southern sandoria AH (can specify AH MH or HP number. Can use autotranslate for zone names)
+
+//sw po all stagingpointname 
+
+**Buff scripts
+
+nqbrdbuff- no JA enhancements, just two buff songs and two ballads to your healer (in case you get songs dispelled or someone dies before JA recast is back up)
+
+hqbrdbuff- Soul Voice and Nitro enhanced songs for melee and healer
